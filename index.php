@@ -9,8 +9,7 @@
 	<link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-	
-	
+
 
 	<div class="wrap ">
         <a class="btn btn-primary " href="data.php">All Student</a>

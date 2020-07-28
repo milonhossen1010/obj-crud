@@ -1,3 +1,15 @@
+<?php require_once "vendor/autoload.php"; ?>
+<?php 
+	
+	// Student class use
+	use Crud\Controller\Student;
+
+	// Student class instance
+	$student = new Student;
+
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +46,8 @@
 
 				} else{
 
+					$student -> addNewStudent($name, $email, $cell, $photo);
+
 					$mess = '<p class="alert alert-success">Registarion success!<button class="close" data-dismiss="alert">&times;</button></p>';
 				}
 
@@ -65,7 +79,7 @@
 						<input name="cell" class="form-control" type="text">
 					</div>
 					<div class="form-group">
-						<label for="">File</label>
+						<label for="">Photo</label>
 						<input name="photo" class="form-control" type="file">
 					</div>
 					<div class="form-group">

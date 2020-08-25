@@ -4,6 +4,7 @@
 	// Student class use
 	use Crud\Controller\Student;
 
+
 	// Student class instance
 	$student = new Student;
 
@@ -23,6 +24,7 @@
 <body>
 	
 	<?php 
+
 
 			if (isset($_POST["submit"])) {
 
